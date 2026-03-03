@@ -4,14 +4,8 @@ import { useEffect } from "react";
 import { Navbar } from "@/components/Navbar";
 import { ContactForm } from "@/components/ContactForm";
 import { CoverflowCarousel } from "@/components/CoverflowCarousel";
-import {
-  SiAmazon,
-  SiDocker,
-  SiKubernetes,
-  SiTerraform,
-  SiGithubactions,
-  SiJenkins
-} from "react-icons/si";
+import { SiDocker, SiKubernetes, SiTerraform, SiGithubactions, SiJenkins } from "react-icons/si";
+import { FaAws } from "react-icons/fa";
 import { FiGithub, FiExternalLink, FiMail, FiDownload } from "react-icons/fi";
 
 const projects = [
@@ -167,7 +161,7 @@ export default function HomePage() {
                 </p>
                 <div className="mt-4 grid grid-cols-3 gap-4 text-[11px] text-slate-200">
                   <div className="flex flex-col items-center gap-2 rounded-xl border border-slate-800/80 bg-slate-950/40 px-3 py-3">
-                    <SiAmazon className="h-6 w-6 text-[#FF9900]" />
+                    <FaAws className="h-6 w-6 text-[#FF9900]" />
                     <span>AWS</span>
                   </div>
                   <div className="flex flex-col items-center gap-2 rounded-xl border border-slate-800/80 bg-slate-950/40 px-3 py-3">
@@ -246,7 +240,7 @@ export default function HomePage() {
                 </h3>
                 <div className="flex flex-wrap gap-3 text-xs">
                   <span className="chip-animated inline-flex w-full items-center gap-2 rounded-full bg-slate-900/80 px-3 py-1 text-slate-100 sm:w-auto">
-                    <SiAmazon className="h-4 w-4 text-[#FF9900]" />
+                    <FaAws className="h-4 w-4 text-[#FF9900]" />
                     AWS (EC2, ECS/EKS, S3, RDS, Lambda)
                   </span>
                   <span className="chip-animated inline-flex w-full items-center gap-2 rounded-full bg-slate-900/80 px-3 py-1 text-slate-100 sm:w-auto">
